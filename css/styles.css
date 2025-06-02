@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Quintessential', cursive;
+    font-size: 2.5em;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 1.3em;
+    padding: 20px;
+    margin: 0 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#sobre_mi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 40px 0 40px;
+    background-color: bisque;
+}
+
+#sobre_mi p {
+    padding-bottom: 60px;
+    border-bottom: rgb(120, 63, 63) solid;
+}
+
+
+/*-- Estilos de la seccion header e imagen --*/
+
+header{
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #bbb;
+}
+
+header .contenedor{
+    height: 100px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 100px;
+    background-color: bisque;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+#div_imagen{
+    padding: 40px 0;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+
+/*-- Estilos de la seccion de la tabla --*/
+
+#section_tabla{
+    padding: 80px 50px 100px 50px;
+    background-image: linear-gradient(bisque, #fff);
+}
+
+table{
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table th, table td{
+    padding: 10px;
+    border: 2px solid rgb(60, 117, 21);
+    text-align: center;
+}
+
+table th{
+    background-color: rgb(67, 143, 76);
+    color: #fff;
+    font-size: 1em;
+}
+
+table tr:nth-child(even) td {
+    background-color: rgb(197, 224, 179);
+
+}
+
+table tr:nth-child(odd) td {
+    background-color: rgb(226, 239, 217);
+}
+
+
+/*-- Estilos de la seccion del formulario --*/
+
+#section_formulario{
+    padding: 60px;
+    background-image: linear-gradient(#fff, rgb(243, 234, 223), rgb(225, 198, 162));
+}
+
+#form_contacto{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 30px 40px;
+    max-width: 400px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(197, 224, 179);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#form_contacto label{
+    padding: 7px 5px;
+    font-weight: bold;
+}
+
+#form_contacto input{
+    height: 20px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button.submit{
+    margin: 15px;
+    padding: 10px 40px;
+    font-family: Helvetica, calibri, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #444;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(#fff, #bbb);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+button.submit:hover{
+	cursor: pointer;
+	color:  rgb(60, 117, 21);
+}
+
+
+/*-- Estilos del footer --*/
+
+footer .contenedor{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+}
+
+.redes-sociales {
+    display: flex;
+}
+
+.redes-sociales a {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    color: #67c2a5;
+}
+
+.copy{
+    font-size: 1.25em;
+    padding: 0;
+}
+
+
+/*-- Estilos responsive media --*/
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    p {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 1em;
+    }
+    
+    table {
+        font-size: 0.8em;
+    }
+}
